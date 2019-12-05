@@ -1,0 +1,12 @@
+.header_top {
+  height: 80px;
+  width: 100%;
+  background-color: grey;
+}
+
+
+.jumbo {
+  height: 500px;
+  min-width: 490px;
+  background-color: pink;
+}
