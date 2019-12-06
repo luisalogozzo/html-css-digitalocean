@@ -117,6 +117,13 @@ body {
 }
 
 /* sezione deploy scale */
+
+#designed_for_dev {
+  background-color: #F4F5F9;
+  padding-bottom: 70px;
+}
+
+
 #deploy_scale ul {
     border-left: 2px solid #CCCCCC;
 }
@@ -127,21 +134,53 @@ body {
   line-height: 45px;
 }
 
-.deploy_scale_box {
-  min-height: 230px;
-  max-width: 273.33px;
+.h2_section  h2 {
+  color: #031b4e;
+  padding-bottom: 25px;
+}
+
+.h2_section p {
+  color: #5F6D8B;
+  font-size: 15px;
+}
+
+.features_box  {
+  min-height: 170px;
+ padding-right: 60px;
   margin-bottom: 15px;
 }
 
-.deploy_scale_box h3 {
+.features_box  h3 {
   font-size: 18px;
   font-weight: 500;
   color: #031b4e;
 }
-.deploy_scale_box p {
+.features_box  p {
 
   color: #031b4e;
 }
+
+/* .screenshot_wrapper .glyphicon {
+  position: absolute;
+  /* transform: translateY(-50%); */
+
+/* .screenshot_wrapper span {
+  transform: translateY(150%);
+  font-size: 30px;
+  color: #031b4e;
+} */
+
+.screenshot_text p {
+  color: #031b4e;
+  font-weight: 500;
+}
+
+.screenshot_text i {
+  color: #287bfe;
+
+}
+
+
 
 
 
@@ -167,22 +206,42 @@ body {
 
   .h2_section  h2 {
     font-size: 40px;
+
   }
 
   .h2_section p {
     font-size: 30px;
   }
 
-  .deploy_scale_box{
+  /* #designed_for_dev {
+    background-color: #F4F5F9;
+  } */
+
+  .features_box {
     min-height: 100px;
     width: 100%;
   }
-  .deploy_scale_box h3 {
+  .features_box  h3 {
     font-size: 16px;
     font-weight: 500;
     color: #031b4e;
-}
+  }
 
+  .screenshot_wrapper img {
+    width: 300px;
+    height: auto;
+    margin: 110px 20px 20px;
+  }
+
+  .screenshot_text {
+    padding: 0 142px 0;
+  }
+  .screenshot_text p {
+    margin-bottom: 110px;
+    font-size: 16px;
+  }
+
+}
 
 /* md */
 @media screen and (min-width: 768px) {
@@ -196,13 +255,32 @@ body {
   }
 
   .h2_section  h2 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .h2_section p {
-    font-size: 30px;
+    font-size: 22px;
   }
 
+  /* #designed_for_dev {
+    background-color: #F4F5F9;
+  } */
+
+  .screenshot_wrapper img {
+    width: 400px;
+    height: auto;
+    margin: 60px 20px 20px;
+  }
+
+  .screenshot_text p {
+    margin-bottom: 50px;
+  }
+
+  .screenshot_wrapper span {
+    transform: translateY(150%);
+    font-size: 30px;
+    color: #031b4e;
+  }
 
 }
 
@@ -213,10 +291,24 @@ body {
     font-size: 62px;
   }
 
-  #deploy_scale .container_50 {
+  /* #deploy_scale .container_50 {
     width: 70%;
     margin: auto;
+  } */
+
+  /* #designed_for_dev {
+    background-color: #fff;
+  } */
+
+  .screenshot_wrapper img {
+    width: 600px;
+    height: auto;
+    margin: 0 20px 20px;
   }
 
+  .screenshot_text p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
 
 }
