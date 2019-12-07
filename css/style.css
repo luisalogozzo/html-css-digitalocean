@@ -1,3 +1,4 @@
+
 /* .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -145,6 +146,11 @@ body {
   line-height: 45px;
 }
 
+.h2_section {
+  padding-top: 50px;
+  /* padding-bottom: 60px; */
+}
+
 .h2_section  h2 {
   color: #031b4e;
   padding-bottom: 25px;
@@ -166,9 +172,14 @@ body {
   font-weight: 500;
   color: #031b4e;
 }
-.features_box  p {
+.features_box p {
   font-size: 16px;
-  color: #031b4e;
+  color: #979FB3;
+}
+
+.features_box a {
+  color: #277AFF;
+  font-size: 16px;
 }
 
 /* .screenshot_wrapper .glyphicon {
@@ -191,10 +202,34 @@ body {
 
 }
 
+/* SEZIONE SPEED-TEST */
+
+#test_speed {
+  background: rgb(37,40,119);
+  background: linear-gradient(0deg, rgba(37,40,119,1) 0%, rgba(34,44,231,1) 100%);
+  padding-bottom: 60px;
+}
+
+#test_speed .row .col-xs-6 .row {
+  border-bottom: 1px solid white;
+}
 
 
+#test_speed h2,
+#test_speed p {
+  color: white;
+  margin: 10px 0 10px;
+}
 
+#test_speed a {
+  display: inline-block;
+  margin: 10px 0 10px;
 
+}
+
+.small_arrow {
+  margin-left: 5px;
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
@@ -221,7 +256,7 @@ body {
 
   .h2_section  h2 {
     font-size: 40px;
-
+    padding: 0 20px 0;
   }
 
   .h2_section p {
@@ -257,6 +292,10 @@ body {
     font-size: 16px;
   }
 
+  .features_box_pad {
+    padding-bottom: 25px;
+  }
+
 }
 
 /* md */
@@ -284,6 +323,7 @@ body {
 
   .features_box {
     min-height: 222px;
+    padding: 0 17px 0;
   }
   .features_box h3 {
     font-size: 18px;
@@ -322,6 +362,7 @@ body {
   /* #designed_for_dev {
     background-color: #fff;
   } */
+
 
   .screenshot_wrapper img {
     width: 600px;
