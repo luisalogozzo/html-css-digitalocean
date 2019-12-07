@@ -53,6 +53,11 @@
   margin: auto;
 }
 
+hr  {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   min-width: 635px;
@@ -147,7 +152,7 @@ body {
 }
 
 .h2_section {
-  padding-top: 50px;
+  /* padding-top: 50px; */
   /* padding-bottom: 60px; */
 }
 
@@ -210,9 +215,9 @@ body {
   padding-bottom: 60px;
 }
 
-#test_speed .row .col-xs-6 .row {
+/* #test_speed .row .col-xs-6 .row {
   border-bottom: 1px solid white;
-}
+} */
 
 
 #test_speed h2,
@@ -230,6 +235,8 @@ body {
 .small_arrow {
   margin-left: 5px;
 }
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
