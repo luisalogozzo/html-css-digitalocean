@@ -350,11 +350,19 @@ a:hover {
   margin: 10px 0 10px;
 }
 
+#test_speed .col-xs-7 p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 #test_speed a {
   display: inline-block;
   margin: 10px 0 10px;
   color: #00d7d2;
 
+}
+
+#test_speed a:hover {
+  color: rgba(34,44,231,1);
 }
 
 .small_arrow {
