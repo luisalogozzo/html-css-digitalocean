@@ -8,9 +8,6 @@
   padding-right: 0;
   padding-left: 0;
 }
-.no_pad {
-  padding: 0;
-}
 
 .padding_top_50 {
   padding-top: 50px;
@@ -133,7 +130,7 @@ a:hover {
 .jumbo {
   /* height: 500px; */
   margin-top: 80px;
-  min-width: 496px;
+  /* min-width: 496px; */
   background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,7 +149,6 @@ a:hover {
 }
 
 .jumbo_form {
-  max-width: 455px;
   height: 400px;
   margin: 60px auto;
   background-color: white;
@@ -203,9 +199,8 @@ a:hover {
   position: relative;
   color: #676767;
   font-weight: 500;
-  -webkit-box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
-  -moz-box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
-   box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
+  border: 0;
+  box-shadow: 1px 1px rgba(224,224,224,0.63);
 }
 
 .jumbo_form .btn_google:hover {
@@ -218,9 +213,12 @@ a:hover {
   left: 5px;
 }
 
-.jumbo_form small a {
-  display: inline-block;
+.jumbo_form p  {
+  font-size: 95%;
   margin-top: 5px;
+}
+
+.jumbo_form p a {
   text-decoration: underline;
   color: #287bfe;
 }
@@ -275,11 +273,6 @@ a:hover {
   line-height: 45px;
 }
 
-.h2_section {
-  /* padding-top: 50px; */
-  /* padding-bottom: 60px; */
-}
-
 .h2_section  h2 {
   color: #031b4e;
   padding-bottom: 25px;
@@ -290,11 +283,6 @@ a:hover {
   font-size: 15px;
 }
 
-/* .features_box  {
-  min-height: 170px;
-  padding: 0px 12px 0;
-  margin-bottom: 15px;
-} */
 
 .features_box  h3 {
   font-size: 18px;
@@ -522,11 +510,12 @@ footer ul li a:hover {
   }
 
   .jumbo_form {
-    margin-top: 0;
+    margin: 0 auto;
+
   }
 
   .loghi img {
-    width: calc((100% / 2) - 90px);
+    width: 40%;
   }
 
 
@@ -644,9 +633,10 @@ footer ul li a:hover {
     font-size: 23px;
   }
 
-  /* #designed_for_dev {
-    background-color: #F4F5F9;
-  } */
+#row_container {
+  width: 90%;
+  margin: 0 auto;
+}
 
   .features_box {
     min-height: 222px;
@@ -654,9 +644,8 @@ footer ul li a:hover {
   }
 
  #deploy_scale .features_box {
-  min-height: 235px;
+  min-height: 265px;
   padding: 0 17px 0;
-  max-width: 221px;
  }
 
  #deploy_scale .h2_section h2 {
@@ -664,7 +653,7 @@ footer ul li a:hover {
  }
 
  .padding_l_85 {
-   padding-left: 70px;
+   padding-left: 0;
  }
 
   .features_box h3 {
