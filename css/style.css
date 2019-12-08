@@ -24,8 +24,8 @@
   padding-top: 25px;
 }
 
-.padding_btm_25 {
-  padding-bottom: 25px;
+.padding_btm_15 {
+  padding-bottom: 15px;
 }
 
 .padding_r_25 {
@@ -193,7 +193,10 @@ a:hover {
 .jumbo_form .btn_blue {
   background-color: #579AFF;
   color: white;
+}
 
+.jumbo_form .btn_blue:hover {
+  background-color: #0C4AFF;
 }
 
 .jumbo_form .btn_google {
@@ -203,6 +206,10 @@ a:hover {
   -webkit-box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
   -moz-box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
    box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
+}
+
+.jumbo_form .btn_google:hover {
+  background-color: rgba(224,224,224,0.63);
 }
 
 .jumbo_form .btn_google img {
@@ -222,7 +229,6 @@ a:hover {
 
 #partners_logo {
   background-color: #F4F5F9;
-  /* height: 280px; */
   width: 100%;
 }
 
@@ -235,6 +241,7 @@ a:hover {
 #partners_logo a {
   color: #287bfe;
   font-weight: 500;
+  font-size: 16px;
 }
 
 #partners_logo .logo_wrapper {
@@ -426,6 +433,10 @@ background: linear-gradient(0deg, rgba(37,40,119,1) 0%, rgba(34,44,231,1) 100%);
   font-weight: 500;
 }
 
+#get_started a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 /* footer [class*="col-"] {
   background-color: blue;
   border: 1px solid;
@@ -509,6 +520,7 @@ footer ul li a:hover {
   .loghi img {
     width: calc((100% / 2) - 90px);
   }
+
 
   .margin_right_30 {
     margin-right: 30px;
@@ -731,7 +743,7 @@ footer ul li a:hover {
 
 #deploy_scale .features_box {
   min-height: 200px;
-  padding: 0 17px 0;
+  padding: 0 37px 0;
   max-width: 500px;
 }
 
