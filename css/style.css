@@ -8,7 +8,9 @@
   padding-right: 0;
   padding-left: 0;
 }
-
+.no_pad {
+  padding: 0;
+}
 
 .padding_top_50 {
   padding-top: 50px;
@@ -60,27 +62,67 @@ hr  {
 
 body {
   font-family: 'Roboto', sans-serif;
-  min-width: 635px;
+  min-width: 500px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .header_top {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 80px;
   width: 100%;
   line-height: 80px;
+  background-color: white;
+  z-index: 3;
 }
 
+.scroll_menu {
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  color: #287bfe;
 
-.jumbo {
-  /* height: 500px; */
-  min-width: 496px;
-  background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.header_top .btn {
+  color: #287bfe;
+  border-color: #287bfe;
+}
+
+.header_top .btn:hover {
+  background-color: #287bfe;
+  color: white;
+}
+
+.header_top ul li {
+  color: #3f547a;
+}
+
+.header_top ul li a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header_top ul li a:hover {
+  color: #287bfe;
+}
+
+.header_top ul li a i {
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 .logo_digital-ocean img {
   width: 170px;
   height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(68%);
 }
 
 .header_nav ul li a {
@@ -88,9 +130,25 @@ body {
   color: inherit;
 }
 
-.h1_section {
-  color: white;
+.jumbo {
+  /* height: 500px; */
+  margin-top: 80px;
+  min-width: 496px;
+  background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.h1_section {
+  padding-top: 80px;
+  color: white;
+}
+
+.h1_section p {
+  font-size: 19px;
+  color: #BACCFF;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .jumbo_form {
@@ -100,6 +158,65 @@ body {
   background-color: white;
 }
 
+.jumbo_form {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.jumbo_form input {
+  display: block;
+  /* margin-bottom: 5px; */
+  width: 90%;
+  height: 45px;
+  border-radius: 3px;
+  border: 1px solid #F2F2F2;
+  margin: 10px auto 5px;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight:
+}
+
+.jumbo_form h3 {
+  margin-top: 5px;
+  color: #287bfe;
+  font-size: 30px;
+}
+
+.jumbo_form button {
+  display: block;
+  width: 90%;
+  margin: 10px auto 5px;
+}
+
+.jumbo_form .btn_blue {
+  background-color: #579AFF;
+  color: white;
+
+}
+
+.jumbo_form .btn_google {
+  position: relative;
+  color: #676767;
+  font-weight: 500;
+  -webkit-box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
+  -moz-box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
+   box-shadow: 7px 7px 3px -5px rgba(224,224,224,0.63);
+}
+
+.jumbo_form .btn_google img {
+  width: 5%;
+  position: absolute;
+  left: 5px;
+}
+
+.jumbo_form small a {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: underline;
+  color: #287bfe;
+}
 /* fine header */
 /* inizio main */
 
@@ -204,7 +321,7 @@ body {
 
 .screenshot_text i {
   color: #287bfe;
-
+ font-size: 12px;
 }
 
 /* SEZIONE SPEED-TEST */
@@ -229,6 +346,7 @@ body {
 #test_speed a {
   display: inline-block;
   margin: 10px 0 10px;
+  color: #00d7d2;
 
 }
 
@@ -288,15 +406,93 @@ body {
    top: 50%;
    transform: translate(170%, -50%);
 }
+
+/* SEZIONE GET STARTED */
+
+#get_started {
+  background: rgb(37,40,119);
+background: linear-gradient(0deg, rgba(37,40,119,1) 0%, rgba(34,44,231,1) 100%);
+}
+
+#get_started h2 {
+  color: white;
+}
+
+#get_started a {
+  color: #287bfe;
+  background-color: white;
+  font-size: 18px;
+  padding: 8px 14px;
+  font-weight: 500;
+}
+
+/* footer [class*="col-"] {
+  background-color: blue;
+  border: 1px solid;
+  height: 400px;
+} */
+
+footer {
+  background-color: #021C4E;
+}
+
+
+footer div:first-child span {
+  display: block;
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+}
+
+footer div:first-child small {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 15px;
+}
+
+footer ul li a i {
+  font-size: 20px;
+}
+
+footer h5 {
+  color: rgba(255, 255, 255);
+  font-size: 20px;
+}
+
+footer ul li {
+  margin-bottom: 7px;
+}
+footer ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   .padding_l_85 {
     padding: 15px;
   }
   .h1_section h1 {
-    font-size: 30px;
+    font-size: 39px;
+  }
+
+  .jumbo_form {
+    margin-top: 0;
   }
 
   .loghi img {
@@ -314,12 +510,20 @@ body {
 
   .h2_section  h2 {
     font-size: 40px;
-    padding: 0 20px 0;
   }
 
   .h2_section p {
     font-size: 26px;
     padding: 0px 45px 0;
+  }
+
+#designed_for_dev .h2_section {
+  margin-bottom: 140px;
+}
+
+  #designed_for_dev .h2_section p {
+    margin-top: 25px;
+
   }
 
   /* #designed_for_dev {
@@ -330,28 +534,56 @@ body {
     min-height: 100px;
     width: 100%;
   }
+
+  #features .features_box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .features_box  h3 {
     font-size: 16px;
     font-weight: 500;
     color: #031b4e;
   }
 
+  .features_box p {
+    font-size: 18px;
+  }
+
+  .screenshot_wrapper {
+    margin-top: 80px;
+  }
+
+
   .screenshot_wrapper img {
-    width: 300px;
+    width: 350px;
     height: auto;
-    margin: 110px 20px 20px;
+    margin: 0 20px 20px;
   }
 
   .screenshot_text {
-    padding: 0 142px 0;
+    padding: 0 65px 0;
   }
+
+
   .screenshot_text p {
-    margin-bottom: 110px;
-    font-size: 16px;
+    margin-bottom: 100px;
+    font-size: 18px;
   }
 
   .features_box_pad {
     padding-bottom: 25px;
+  }
+
+  #test_speed .row .col-xs-12:first-child {
+    margin-bottom: 30px;
+  }
+
+  .rockerbox_wrapper {
+    width: 300px;
+    padding: 50px 0 50px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
@@ -359,7 +591,7 @@ body {
 /* md */
 @media screen and (min-width: 768px) {
   .h1_section h1 {
-    font-size: 43px;
+   font-size: 37px;
   }
 
   /* #deploy_scale .container_50 {
@@ -403,6 +635,27 @@ body {
     color: #031b4e;
   }
 
+  #test_speed .row .col-sm-12:first-child {
+    margin-bottom: 30px;
+  }
+
+  .rockerbox_wrapper {
+    width: 380px;
+    padding: 50px 0 50px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .jumbo_form {
+    width: 280px;
+    height: 420px;
+    margin: 60px auto;
+    background-color: white;
+  }
+
+
+
 }
 
 
@@ -439,6 +692,7 @@ body {
 
 .rockerbox_wrapper {
   width: 600px;
+  padding: 70px 0 70px;
   margin-left: auto;
   margin-right: auto;
 }
