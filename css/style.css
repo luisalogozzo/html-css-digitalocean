@@ -104,7 +104,7 @@ a:hover {
 }
 
 .header_top ul li {
-  color: #3f547a;
+  color: #021c4e;
 }
 
 .header_top ul li a {
@@ -278,6 +278,10 @@ a:hover {
   line-height: 48px;
 }
 
+#deploy_scale ul li:hover {
+  cursor: pointer;
+}
+
 .h2_section  h2 {
   color: #031b4e;
   padding-bottom: 25px;
@@ -308,6 +312,10 @@ a:hover {
 .screenshot_wrapper span {
   font-size: 30px;
   color: #031b4e;
+}
+
+.screenshot_wrapper:hover {
+  cursor: grab;
 }
 
 .screenshot_wrapper span:hover {
@@ -377,6 +385,10 @@ a:hover {
   position: relative;
 }
 
+.rockerbox_wrapper:hover {
+  cursor: grab;
+}
+
 .rockerbox_wrapper p {
   font-size: 22px;
   color: #5F6D8B;
@@ -443,16 +455,12 @@ background: linear-gradient(0deg, rgba(37,40,119,1) 0%, rgba(34,44,231,1) 100%);
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* footer [class*="col-"] {
-  background-color: blue;
-  border: 1px solid;
-  height: 400px;
-} */
+
+/* footer */
 
 footer {
   background-color: #021C4E;
 }
-
 
 footer div:first-child span {
   display: block;
@@ -518,6 +526,7 @@ footer ul li a:hover {
 
   .jumbo_form {
     margin: 0 auto;
+    margin-bottom: 15px;
   }
 
   .loghi img {
