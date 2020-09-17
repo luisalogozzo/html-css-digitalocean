@@ -63,7 +63,6 @@ hr  {
 
 body {
   font-family: 'Roboto', sans-serif;
-  min-width: 500px;
 }
 
 a:hover {
@@ -136,7 +135,7 @@ a:hover {
 
 .jumbo {
   margin-top: 80px;
-  background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+  background-image: url('../img/bg-home-hero-3.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -252,6 +251,7 @@ a:hover {
 }
 
 .loghi {
+  width: 100%;
   display: inline-block;
 }
 
@@ -581,14 +581,14 @@ footer ul li a:hover {
   }
 
   .screenshot_wrapper {
-    margin-top: 80px;
+    width: 80%;
+    margin: 80px auto 20px;
   }
 
 
   .screenshot_wrapper img {
-    width: 350px;
-    height: auto;
-    margin: 0 20px 20px;
+    width: 100%;
+
   }
 
   .screenshot_text {
@@ -610,7 +610,7 @@ footer ul li a:hover {
   }
 
   .rockerbox_wrapper {
-    width: 300px;
+    max-width: 80%;
     padding: 50px 0 50px;
     margin-top: 90px;
     margin-left: auto;
@@ -762,8 +762,8 @@ footer ul li a:hover {
     font-size: 15px;
     text-align: left;
     color: #021C4E;
-    border: 1px solid #021C4E;
-   box-shadow: 0 0 6px #021c4e;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   }
 
 
@@ -771,11 +771,13 @@ footer ul li a:hover {
     width: 0;
     height: 0;
     position: absolute;
-    right: -18px;
+    right: -19px;
     bottom: 9px;
     transform: rotate(-90deg);
     border: solid 9px;
-    border-color: rgba(0,0,0,0.75) transparent transparent transparent;
+    filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, .1));
+    border-color: rgba(0, 0, 0, 0) transparent transparent transparent;
+
   }
 
   .balloon .tip:after {
@@ -785,7 +787,6 @@ footer ul li a:hover {
     position: absolute;
     bottom: -8px;
     right: -9px;
-    /* transform: rotate(-90deg); */
     border: solid 9px;
     border-color: #fff  transparent transparent transparent;
 
